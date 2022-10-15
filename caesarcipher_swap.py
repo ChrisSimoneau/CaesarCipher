@@ -2,10 +2,10 @@
 ## Also added a swap function to replace the encrypted letter with another letter
 
 ## ask user for a message to be encrypted
-message = input("Enter a message to be encrypted: ")
+message = input('Enter a message to be encrypted: ')
 
 ## holds the encrypted message
-encrypted = ""
+encrypted = ''
 
 ## create a variable to hold the shift amount
 shift = 0
@@ -20,19 +20,19 @@ for letter in message:
         ## Check if its uppercase
         if letter.isupper():
             ## if the value is greater than Z to reset to A
-            if value > ord("Z"):
+            if value > ord('Z'):
                 value -= 26
-            elif value < ord("A"):
+            elif value < ord('A'):
                 ## add 26 to the value
                 value += 26
         ## if the letter is lowercase
         elif letter.islower():
             ## if the value is greater than z reset to a
-            if value > ord("z"):
+            if value > ord('z'):
                 value -= 26
                 
             ## if the value is less than a
-            elif value < ord("a"):
+            elif value < ord('a'):
                 value += 26
 
         ## convert the value back to a letter
@@ -72,33 +72,33 @@ swaps = {
     'w': 'd',
     'x': 'c',
     'y': 'b',
-    'z': 'a'
-    "A": "Z",
-    "B": "Y",
-    "C": "X",
-    "D": "W",
-    "E": "V",
-    "F": "U",
-    "G": "T",
-    "H": "S"
-    "I": "R",
-    "J": "Q",
-    "K": "P",
-    "L": "O",
-    "M": "N",
-    "N": "M",
-    "O": "N",
-    "P": "O",
-    "Q": "P",
-    "R": "S",
-    "S": "G",
-    "T": "G",
-    "U": "F",
-    "V": "E",
-    "W": "D",
-    "X": "C",
-    "Y": "B",
-    "Z": "A"
+    'z': 'a',
+    'A': 'Z',
+    'B': 'Y',
+    'C': 'X',
+    'D': 'W',
+    'E': 'V',
+    'F': 'U',
+    'G': 'T',
+    'H': 'S',
+    'I': 'R',
+    'J': 'Q',
+    'K': 'P',
+    'L': 'O',
+    'M': 'N',
+    'N': 'M',
+    'O': 'N',
+    'P': 'O',
+    'Q': 'P',
+    'R': 'S',
+    'S': 'G',
+    'T': 'G',
+    'U': 'F',
+    'V': 'E',
+    'W': 'D',
+    'X': 'C',
+    'Y': 'B',
+    'Z': 'A'
 }
 
 ## loop through the encrypted message and swap the letters
