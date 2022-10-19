@@ -1,4 +1,4 @@
-## This is an augmented version of the Caesar cipher, where the cipher shifts values after every letter making it harder
+## This is an augmented version of the Caesar cipher, where the cipher shifts values after every letter making it harder to decrypt
 ## Also added a swap function to replace the encrypted letter with another letter
 
 ## ask user for a message to be encrypted
